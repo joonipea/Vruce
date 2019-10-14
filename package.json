@@ -6,6 +6,6 @@
   "author": "Joonipea",
   "dependencies": {
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
-    "winston": "^3.3.1"
+    "ws": ">=3.3.1"
   }
 }

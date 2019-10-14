@@ -12,6 +12,7 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
+
 bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
@@ -33,11 +34,31 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'Pong!'
                 });
             break;
-			// !vibe check
+			// !vibecheck
             case 'vibecheck':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'vro ur vibes are fuckin rancid'
+		function randomNumber() {
+    			var res = Math.floor((Math.random() * 10) + 1);
+			}
+
+			function getRandomSentence() {
+    				var index = Math.floor(Math.random() * (maxSentences - 1));
+    				bot.sendMessage({
+                    			to: channelID,
+                    			message: return sentences[index]
+				}
+
+//Random sentences
+		var sentences = [
+    			'vro ur vibes are rancid',
+    			'cold possibly lukewarm',
+    			'perpindicular',
+    			'green',
+    			'good vibes',
+    			'null',
+    			'void'
+		],
+		maxSentences = sentences.length;
+                
                 });
             break;
             // Just add any case commands if you want to..

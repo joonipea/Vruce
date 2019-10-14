@@ -1,11 +1,11 @@
 {
   "name": "vruce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Performs vibe checks and much more",
   "main": "bot.js",
   "author": "Joonipea",
   "dependencies": {
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
-    "winston": "^3.2.1"
+    "winston": "^3.3.1"
   }
 }
